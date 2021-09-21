@@ -2,6 +2,7 @@
 import random
 
 board = []
+miss = []
 
 for x in range(0, 4):
     board.append(["-"] * 4)
@@ -28,6 +29,9 @@ def random_col(board):
     """
     return random.randint(0, 3)    
 
+# Define global variables
+ship_row = random_row(board)
+ship_col = random_col(board)
 
 def main():
     # Greeting the user.
