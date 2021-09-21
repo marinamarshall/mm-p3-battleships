@@ -50,11 +50,15 @@ def user_answer():
                 board[guess_row][guess_col] = "X"
                 print("Congratulations! You sunk the battleship, You Win!")
                 print_battleships_board(board)
+                turns = turns + 1
+                print(turns)
                 break
             else:
                 board[guess_row][guess_col] = "O"
                 print("You Missed! Try Again")
                 print_battleships_board(board)
+                turns = turns + 1
+                print(turns)
             
     except ValueError:
         print("Invalid user input, try again")    
