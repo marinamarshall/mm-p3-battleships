@@ -14,4 +14,22 @@ def print_battleships_board(board):
     for place in board:
         print(" ".join(place))
 
-print_battleships_board(board)
+
+def random_row(board):
+    """
+    Set the ship row at random
+    """
+    return random.randint(0, 3)
+
+
+def random_col(board):
+    """
+    Set the ship column at random
+    """
+    return random.randint(0, 3)    
+
+
+def main():
+    print_battleships_board(board)
+    random_row(board)
+    random_col(board)
