@@ -1,4 +1,11 @@
-## Overview
+# Battleships
+
+Battleships is a backend Python-coded game that is played in the terminal. The game runs in the CodeInstitute mock terminal on Heroku.
+
+The game provides one board where the the user guesses where the ship is located from the command-line. The computer randomly generates where the ship is located in the game. This is a fun terminal-based game against the computer. The battleship occupies one square on the board. The user will have 10 attempts at finding the battleship and the game ends when the user has used up all of their guesses or when they have found the battleship.
+
+[Here is the live version of the battleships game]()
+
 ## How to Play
 ## Features
 ## Testing
