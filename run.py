@@ -66,8 +66,11 @@ def user_answer():
                 print_battleships_board(board)
                 turns = turns + 1
                 print("you are on guess " + str(turns) + " of 10")            
-    except ValueError:
-        print("Invalid user input, try again")
+    except ValueError as e:
+        print(f"Invalid data: {e}, please try again.\n")
+        return False
+    return True
+            
 
 
 def main():
