@@ -39,6 +39,27 @@ print(ship_row)
 ship_col = random_col(board)
 print(ship_col)
 
+
+def user_answer():  
+    try:
+        for turn in range(5):
+            guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
+            guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
+
+            if (guess_row == ship_row and guess_col == ship_col):
+                board[guess_row][guess_col] = "X"
+                print("Congratulations! You sunk the battleship, You Win!")
+                print_battleships_board(board)
+                break
+            else:
+                board[guess_row][guess_col] = "O"
+                print("You Missed! Try Again")
+                print_battleships_board(board)
+            
+    except ValueError:
+        print("Invalid user input, try again")    
+
+
 def main():
     # Greeting the user.
     print("Welcome to Battleships!\n")
@@ -46,18 +67,7 @@ def main():
     print_battleships_board(board)
     random_row(board)
     random_col(board)
-    
-    try:
-        for turn in range(5):
-            guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
-            guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
-
-            if guess_row == ship_row and guess_col == ship_col:
-                print("Congratulations! You sunk the battleship, You Win!")
-                break
-            
-    except ValueError:
-        print("Invalid user input, try again")      
+    user_answer()
 
 
 main()
