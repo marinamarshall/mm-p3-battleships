@@ -7,6 +7,10 @@ The game provides one board where the the user guesses where the ship is located
 [Here is the live version of the battleships game]()
 
 ## How to Play
+This battleships game is based on the original pen-and-paper game, with a few tweaks incorporated. [Read more here](https://en.wikipedia.org/wiki/Battleship_(game)). As soon as the terminal is loaded, information is provided to the user to tell them what to expect from the game. The user will be prompted to enter a guess for a row and column number they think the ship might be located at. In this terminal-based version of the game, the player will play against the computer on a single board that is marked with '-' signs to indicate columns and rows that the user has not yet guessed.
+
+Once the user begins guessing, correct answer will be indicated by an 'X' and incorrect answers will be marked with an 'O'. The computer randomly generates one ship for the user to locate and destroy within 10 moves. The user will be prompted to enter a guess for where they think the ship is located within the grid. This answer will be between 0 and 3 for each value (row and column). Once the user has either located and destroyed the ship OR they have used up their 10 guesses, the game will end and the user can decide if they want to play again on another randomly generated game of battleships.
+
 ## Features
 ## Testing
 ## Bugs
