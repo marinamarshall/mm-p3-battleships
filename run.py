@@ -38,6 +38,12 @@ print(ship_col)
 
 
 def user_answer():
+    """
+    Ask user for input for row and column value.
+    Validate this information provided by using a try/
+    except statement
+    Update the turn count and display to the user
+    """
     # Initialize turns to be at zero
     turns = 0
     try:
