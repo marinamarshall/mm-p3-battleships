@@ -51,6 +51,11 @@ def main():
         for turn in range(5):
             guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
             guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
+
+            if guess_row == ship_row and guess_col == ship_col:
+                print("Congratulations! You sunk the battleship, You Win!")
+                break
+            
     except ValueError:
         print("Invalid user input, try again")      
 
