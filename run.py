@@ -4,6 +4,9 @@ import random
 board = []
 miss = []
 
+# Initialize turns to be at zero
+turns = 0
+
 for x in range(0, 4):
     board.append(["-"] * 4)
 
@@ -31,7 +34,10 @@ def random_col(board):
 
 # Define global variables
 ship_row = random_row(board)
+print(ship_row)
+
 ship_col = random_col(board)
+print(ship_col)
 
 def main():
     # Greeting the user.
@@ -43,8 +49,8 @@ def main():
     
     try:
         for turn in range(5):
-        guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
-        guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
+            guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
+            guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
     except ValueError:
         print("Invalid user input, try again")      
 
