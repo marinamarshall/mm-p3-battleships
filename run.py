@@ -1,9 +1,9 @@
-# from random import randint
 import random
 
 board = []
 miss = []
 
+# Define what the game board will look like
 for x in range(0, 4):
     board.append(["-"] * 4)
 
