@@ -30,6 +30,9 @@ def random_col(board):
 
 
 def main():
+    # Greeting the user.
+    print("Welcome to Battleships!\n")
+    print("You get 10 bullets to play against the computer")
     print_battleships_board(board)
     random_row(board)
     random_col(board)
