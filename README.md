@@ -1,3 +1,27 @@
+## Credits
+- CodeInstitute - Python coursework notes and videos
+- CodeInstitute - Mock Terminal
+- CodeInstitute - Heroku deployment steps 
+- Youtube tutorials to get inspiration and ideas on how to tackle the problems
+  - [Henrik Rosqvist](https://www.youtube.com/watch?v=92QRKiCldnE)
+  - [Dr Codie](https://www.youtube.com/watch?v=Ej7I8BPw7Gk&list=PLpeS0xTwoWAsn3SwQbSsOZ26pqZ-0CG6i)
+  - [Dr Codie](youtube.com/watch?v=EziS2eGZGz4&list=PLpeS0xTwoWAsn3SwQbSsOZ26pqZ-0CG6i&index=3)
+  - [Dylan Israel](https://www.youtube.com/watch?v=7Ki_2gr0rsE&t=298s)
+  - [CS Students](https://www.youtube.com/watch?v=MgJBgnsDcF0)
+- GitHub projects looked at
+  - [Anna Lulakova](https://gist.github.com/anceque/4064737)
+  - [Guimaion](https://gist.github.com/guimaion/9275543)
+- [Python Fiddle project code](http://pythonfiddle.com/battleships-game-in-python/)  
+- Extra Reading
+  - [PYnative](https://pynative.com/python-random-randrange/)
+  - [StackOverflow](https://stackoverflow.com/questions/53162/how-can-i-do-a-line-break-line-continuation)  
+- Python Tutor to visualize code step-by-step
+- Stack Overflow for general questions
+- Slack - Python Essentials Channel
+- Mentor Chris
+- Mentor Richard for helping to get the project foundations set up
+- Brian Conlon - Software \developer 
+
 ## Deployment
 
 Fork and Clone Your Repository
