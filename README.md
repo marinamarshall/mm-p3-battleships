@@ -1,3 +1,9 @@
+## Overview
+## How to Play
+## Features
+## Testing
+## Bugs
+
 ## Credits
 - CodeInstitute - Python coursework notes and videos
 - CodeInstitute - Mock Terminal
@@ -20,7 +26,7 @@
 - Slack - Python Essentials Channel
 - Mentor Chris
 - Mentor Richard for helping to get the project foundations set up
-- Brian Conlon - Software \developer 
+- Brian Conlon - Software Developer 
 
 ## Deployment
 
