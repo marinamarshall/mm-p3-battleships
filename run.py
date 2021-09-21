@@ -36,3 +36,13 @@ def main():
     print_battleships_board(board)
     random_row(board)
     random_col(board)
+    
+    try:
+        for turn in range(5):
+        guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
+        guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
+    except ValueError:
+        print("Invalid user input, try again")      
+
+
+main()
