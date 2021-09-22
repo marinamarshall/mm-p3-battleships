@@ -27,7 +27,7 @@ def random_col(board):
     """
     Set the ship column at random
     """
-    return random.randint(0, 3)    
+    return random.randint(0, 3)
 
 # Define global variables
 ship_row = random_row(board)
@@ -58,7 +58,8 @@ def user_answer():
                 turns = turns + 1
                 print("you are on guess " + str(turns) + " of 10")
                 break
-            elif (guess_row < 0 or guess_row > 3)  or (guess_col < 0 or guess_col > 3):
+            elif (guess_row < 0 or guess_row > 3) or \
+                 (guess_col < 0 or guess_col > 3):
                 print ("Oops, that's out of range! Try again")
                 turns = turns + 1
             else:
@@ -70,8 +71,8 @@ def user_answer():
                 turns = turns + 1
                 print("you are on guess " + str(turns) + " of 10")
 
-        except Exception as e:
-            print('Invalid entry. Please try again')
+        except ValueError as e:
+            print ("Error", exp)
             pass
 
 
