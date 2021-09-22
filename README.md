@@ -19,6 +19,9 @@ The player plays against the computer as the computer accepts user input. The co
 The computer generates the same size board each time (4x4) with one ship placed in each round played. The user can answer the same guess twice so that it is more challenging. The computer does not flag the duplicate guesses.
 
 ## Testing
+- Code passed through the PEP8 linter with no issues ()[]
+- Given invalid inputs: string when a number is expected, out of bounds inputs.
+- Tested in GitPod terminal (local) and CodeInstitute Heroku Terminal
 ### Input Validation and Error-Checking
  - The player cannot guess coordinates outside of the board size (0-3)
  - Numbers are the input the board accepts, otherwise an error message is displayed
