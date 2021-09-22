@@ -58,6 +58,7 @@ def user_answer():
                 turns = turns + 1
                 print("you are on guess" + str(turns) + " of 10")
                 break
+            
             else:
                 board[guess_row][guess_col] = "O"
                 miss.append([guess_row, guess_col])
@@ -65,7 +66,10 @@ def user_answer():
                 print("You Missed! Try Again")
                 print_battleships_board(board)
                 turns = turns + 1
-                print("you are on guess " + str(turns) + " of 10")            
+                print("you are on guess " + str(turns) + " of 10")  
+            if guess_row and guess_col in miss:
+                raise ValueError("Value already guessed, please guess again")
+                              
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
         return False

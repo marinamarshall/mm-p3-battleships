@@ -12,6 +12,10 @@ This battleships game is based on the original pen-and-paper game, with a few tw
 Once the user begins guessing, correct answer will be indicated by an 'X' and incorrect answers will be marked with an 'O'. The computer randomly generates one ship for the user to locate and destroy within 10 moves. The user will be prompted to enter a guess for where they think the ship is located within the grid. This answer will be between 0 and 3 for each value (row and column). Once the user has either located and destroyed the ship OR they have used up their 10 guesses, the game will end and the user can decide if they want to play again on another randomly generated game of battleships.
 
 ## Features
+The ship row and column numbers are generated at random by the computer. There is one ship that the user must find before they run out of guesses. They user cannot see where this ship is located so they must guess until they get it right.
+
+The player plays against the computer as the computer accepts user input and keeps track of how many guesses the user had used and updates the user with each guess.
+
 ## Testing
 ## Bugs
 
