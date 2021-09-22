@@ -62,11 +62,13 @@ def user_answer():
             else:
                 board[guess_row][guess_col] = "O"
                 miss.append([guess_row, guess_col])
-                print(miss)
+                print("Ansewrs you have guessed:" + str(miss))
                 print("You Missed! Try Again")
                 print_battleships_board(board)
                 turns = turns + 1
-                print("you are on guess " + str(turns) + " of 10")  
+                print("you are on guess " + str(turns) + " of 10")
+            if (guess_row < 0 or guess_row > 3)  or (guess_col < 0 or guess_col > 3):
+                print ("Oops, you missed! Try again")
             if guess_row and guess_col in miss:
                 raise ValueError("Value already guessed, please guess again")
                               
