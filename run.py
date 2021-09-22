@@ -47,10 +47,10 @@ def user_answer():
     # Initialize turns to be at zero
     turns = 0
     for turn in range(10):
-        guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
-        guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
-
         try:
+            guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
+            guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
+                
             if (guess_row == ship_row and guess_col == ship_col):
                 board[guess_row][guess_col] = "X"
                 print("Congratulations! You sunk the battleship, You Win!")
@@ -59,7 +59,7 @@ def user_answer():
                 print("you are on guess " + str(turns) + " of 10")
                 break
             elif (guess_row < 0 or guess_row > 3) or \
-                 (guess_col < 0 or guess_col > 3):
+                    (guess_col < 0 or guess_col > 3):
                 print ("Oops, that's out of range! Try again")
                 turns = turns + 1
             else:
@@ -69,11 +69,11 @@ def user_answer():
                 print("You Missed! Try Again")
                 print_battleships_board(board)
                 turns = turns + 1
-                print("you are on guess " + str(turns) + " of 10")
+                print("you are on guess " + str(turns) + " of 10")       
 
         except ValueError as e:
-            print ("Error", exp)
-            pass
+            print ("Error with value input")
+            continue  # added by Jo
 
 
 def main():
