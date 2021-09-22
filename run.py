@@ -31,10 +31,8 @@ def random_col(board):
 
 # Define global variables
 ship_row = random_row(board)
-print(ship_row)
 
 ship_col = random_col(board)
-print(ship_col)
 
 
 def user_answer():
@@ -50,26 +48,25 @@ def user_answer():
         try:
             guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
             guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
-                
+
             if (guess_row == ship_row and guess_col == ship_col):
                 board[guess_row][guess_col] = "X"
                 print("Congratulations! You sunk the battleship, You Win!")
                 print_battleships_board(board)
                 turns = turns + 1
-                print("you are on guess " + str(turns) + " of 10")
                 break
             elif (guess_row < 0 or guess_row > 3) or \
-                    (guess_col < 0 or guess_col > 3):
+                 (guess_col < 0 or guess_col > 3):
                 print ("Oops, that's out of range! Try again")
                 turns = turns + 1
             else:
                 board[guess_row][guess_col] = "O"
                 miss.append([guess_row, guess_col])
-                print("Ansewrs you have guessed:" + str(miss))
+                print("Answers you have guessed:" + str(miss))
                 print("You Missed! Try Again")
                 print_battleships_board(board)
                 turns = turns + 1
-                print("you are on guess " + str(turns) + " of 10")       
+                print("you are on guess " + str(turns) + " of 10")
 
         except ValueError as e:
             print ("Error with value input")
