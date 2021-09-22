@@ -24,7 +24,10 @@ The computer generates the same size board each time (4x4) with one ship placed 
  - Numbers are the input the board accepts, otherwise an error message is displayed
 
  ### Future Features
- 
+ - Include more than one ship
+ - Allow user to determine board size
+ - Generate a board for the computer to make guesses
+ - Allow ships to occupy more than one square
 ## Bugs
 
 ## Credits
