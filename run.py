@@ -46,7 +46,6 @@ def user_answer():
     """
     # Initialize turns to be at zero
     turns = 0
-    
     for turn in range(10):
         guess_row = int(input("Guess a Row: (between 0 and 3)\n"))
         guess_col = int(input("Guess a Column: (between 0 and 3) \n"))
@@ -56,7 +55,7 @@ def user_answer():
             print("Congratulations! You sunk the battleship, You Win!")
             print_battleships_board(board)
             turns = turns + 1
-            print("you are on guess" + str(turns) + " of 10")
+            print("you are on guess " + str(turns) + " of 10")
             break
         elif (guess_row != ship_row and guess_col != ship_col):
             board[guess_row][guess_col] = "O"
@@ -72,8 +71,7 @@ def user_answer():
             elif guess_row and guess_col in miss:
                 raise ValueError("Value already guessed, please guess again")
             else:
-                print(f"Invalid data: {e}, please try again.\n") 
-            
+                print(f"Invalid data: {e}, please try again.\n")         
 
 
 def main():
