@@ -68,10 +68,10 @@ def user_answer():
         else:
             if (guess_row < 0 or guess_row > 3)  or (guess_col < 0 or guess_col > 3):
                 print ("Oops, you missed! Try again")
-            elif guess_row and guess_col in miss:
-                raise ValueError("Value already guessed, please guess again")
+                pass
             else:
-                print(f"Invalid data: {e}, please try again.\n")         
+                print(f"Invalid data: {e}, please try again.\n")
+                pass      
 
 
 def main():
