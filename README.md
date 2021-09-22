@@ -14,9 +14,17 @@ Once the user begins guessing, correct answer will be indicated by an 'X' and in
 ## Features
 The ship row and column numbers are generated at random by the computer. There is one ship that the user must find before they run out of guesses. They user cannot see where this ship is located so they must guess until they get it right.
 
-The player plays against the computer as the computer accepts user input and keeps track of how many guesses the user had used and updates the user with each guess.
+The player plays against the computer as the computer accepts user input. The computer keeps track of how many guesses the user had used and updates the user with each guess.
+
+The computer generates the same size board each time (4x4) with one ship placed in each round played.
 
 ## Testing
+### Input Validation and Error-Checking
+ - The player cannot guess coordinates outside of the board size (0-3)
+ - Numbers are the input the board accepts, otherwise an error message is displayed
+
+ ### Future Features
+ 
 ## Bugs
 
 ## Credits
