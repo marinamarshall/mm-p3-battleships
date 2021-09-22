@@ -66,7 +66,6 @@ def user_answer():
                 print("You Missed! Try Again")
                 print_battleships_board(board)
                 turns = turns + 1
-                print("you are on guess " + str(turns) + " of 10")
 
         except ValueError as e:
             print ("Error with value input")

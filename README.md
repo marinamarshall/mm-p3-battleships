@@ -4,7 +4,7 @@ Battleships is a backend Python-coded game that is played in the terminal. The g
 
 The game provides one board where the the user guesses where the ship is located from the command-line. The computer randomly generates where the ship is located in the game. This is a fun terminal-based game against the computer. The battleship occupies one square on the board. The user will have 10 attempts at finding the battleship and the game ends when the user has used up all of their guesses or when they have found the battleship.
 
-[Here is the live version of the battleships game]()
+[Here is the live version of the battleships game](https://mm-p3-battleships.herokuapp.com/)
 
 ## How to Play
 This battleships game is based on the original pen-and-paper game, with a few tweaks incorporated. [Read more here](https://en.wikipedia.org/wiki/Battleship_(game)). As soon as the terminal is loaded, information is provided to the user to tell them what to expect from the game. The user will be prompted to enter a guess for a row and column number they think the ship might be located at. In this terminal-based version of the game, the player will play against the computer on a single board that is marked with '-' signs to indicate columns and rows that the user has not yet guessed.
